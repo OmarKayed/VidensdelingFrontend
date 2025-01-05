@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>IT Vidensdeling</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="Assets/logo2.jpg" alt="Logo" width="300" class="d-inline-block align-text-top" />
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+          </li>
+          <li class="nav-item">
+            <a href="login.html" id="loginLink" class="nav-link">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h3>IT Vidensdeling</h3>
+    <div class="text-end mb-3">
+      <a href="uploadArticle.html" id="newArticleButton" class="btn btn-primary">Ny Artikel</a>
+    </div>
+
+    <div id="articles-container" class="list-group mb-5"></div>
+
+    <h3 class="mt-5">Spørg vores AI</h3>
+    <input type="text" id="userInput" class="form-control" placeholder="Indtast dit spørgsmål">
+    <button class="btn btn-primary mt-3" onclick="askQuestion()">Spørg</button>
+    <div id="responseContainer" class="mt-3 alert alert-info"></div>
+  </div>
+
+  <footer>
+    <p class="text-center text-muted">© 2024 KEA</p>
+  </footer>
+
+  <script src="JS/security.js"></script>
+  <script src="JS/articles.js"></script>
+  <script src="JS/chatbot.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous"></script>
+</body>
+</html>
